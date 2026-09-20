@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+  data:
+    mongodb:
+      uri: mongodb+srv://<your-mongo-user>:<your-mongo-password>@cluster0.mongodb.net/financial_advisor?retryWrites=true&w=majority
+      # Note: In a real CI/CD pipeline, this URI is injected via environment variables.
+      # For local dev, you can use: mongodb://localhost:27017/financial_advisor
+
+jwt:
+  secret: "my-super-secret-key-which-must-be-at-least-32-bytes-long"
+  expiration-ms: 3600000
