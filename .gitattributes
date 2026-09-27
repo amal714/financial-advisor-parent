@@ -1,1 +1,3 @@
+# Force GitHub to treat all files as Java for statistics, or ignore the noise
+*.js linguist-vendored
 *.html linguist-vendored
